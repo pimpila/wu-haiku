@@ -6,8 +6,7 @@ const rg = new RiGrammar();
 // production rules:
 
 // start/s:
-rg.addRule('<start>', ' <5-PP> \n <7-NP> \n <5-VP> ')
-rg.addRule('<start>', ' <5-NP> \n <7-VP> \n <5-PP> ')
+rg.addRule('<start>', '<5-PP> \n <7-NP> \n <5-VP> | <5-NP> \n <7-VP> \n <5-PP>')
 
 rg.addRule('<5-PP>', '<1-prep> <1-det-s> <2-adj> <1-noun-s> | <1-prep> <1-det-p> <2-adj> <1-noun-p> | <1-prep> <1-det> <2-adj> <1-noun-s> | <1-prep> <1-det> <2-adj> <1-noun-p>| <2-prep> <1-det-s> <2-noun-s> | <2-prep> <1-det-p> <2-noun-p> | <2-prep> <1-adj> <2-noun-s> | <2-prep> <1-adj> <2-noun-p> | <2-prep> <3-noun-p> | <2-prep> <3-noun-s>')
 rg.addRule('<5-VP>', '<3-verb> <2-adv> | <2-verb> <3-adv>')
