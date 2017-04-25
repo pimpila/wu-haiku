@@ -4,7 +4,6 @@
 
 // create a dictionary (nested obj) of words cataloged by syllable and part of speech:
 const terminals = {}
-
 txt.forEach( word => {
   const numSyll = RiTa.getSyllables(word).split('/').length;
   const posFull = RiTa.getPosTags(word);
@@ -48,17 +47,22 @@ txt.forEach( word => {
 
   switch(posFull[0]) {
     case 'nns':
-    pos = 'noun-p';
-    break;
+      pos = 'noun-p';
+      break;
     case 'nn':
-    pos = 'noun-s';
-    break;
+      pos = 'noun-s';
+      break;
     case 'nnp':
-    pos = 'noun-s';
-    break;
+      pos = 'noun-s';
+      break;
     case 'nnps':
-    pos = 'noun-s';
-    break;
+      pos = 'noun-s';
+      break;
+    case 'cd':
+      pos = 'number';
+      break;
+    case 'cc':
+      pos = 'conj'
   }
 
   switch (posFull[0][0]) {
@@ -73,9 +77,6 @@ txt.forEach( word => {
       break;
     case 'j':
       pos = 'adj';
-      break;
-    case 'c':
-      pos = 'number';
       break;
     case 'p':
       pos = 'pron';
