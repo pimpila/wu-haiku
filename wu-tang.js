@@ -12,7 +12,7 @@ rg.addRule('<5-PP>', '<1-prep> <1-det-s> <2-adj> <1-noun-s> | <1-prep> <1-det-p>
 rg.addRule('<5-VP>', '<3-verb> <2-adv> | <2-verb> <3-adv>')
 rg.addRule('<5-NP>', '<1-number> <2-adj> <2-noun-p> | <1-det-s> <1-adj> <3-noun-s> | <3-adj> <2-noun-p> | <3-adj> <2-noun-s> | <1-det-p> <1-adj> <3-noun-p> | <1-det> <1-adj> <3-noun-p> | <1-det> <1-adj> <3-noun-p>')
 
-rg.addRule('<7-NP>', '<1-det-s> <1-adj> <5-noun-s> | <1-det-p> <1-adj> <5-noun-s> | <1-det> <1-adj> <5-noun-s> | <1-quest> <2-adj> <4-noun-p> | <1-quest> <2-adj> <4-noun-s> | <2-adj> <1-conj> <2-adj> <2-noun-p> | <2-adj> <1-conj> <2-adj> <2-noun-s>')
+rg.addRule('<7-NP>', '<1-det-s> <1-adj> <5-noun-s> | <1-det-p> <1-adj> <5-noun-s> | <1-det> <1-adj> <5-noun-s> | <1-quest> <2-adj> <4-noun-p> | <1-quest> <2-adj> <4-noun-s> | <2-adj> <1-conj> <2-adj> <2-noun-p> | <2-adj> <1-conj> <2-adj> <2-noun-s> | <1-adj> <1-noun-s> <1-conj> <2-adj> <2-noun-s> | <1-adj> <1-noun-s> <1-conj> <2-adj> <2-noun-p> | <2-adj> <1-conj> <2-adj> <2-noun-s>')
 rg.addRule('<7-VP>', '<3-verb> <4-adv> | <4-verb> <3-adv>')
 
 // for each terminal:
